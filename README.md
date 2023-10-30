@@ -74,4 +74,14 @@ During the development process, we made the following decisions and assumptions:
 - This API assumes that the user provides a custom identifier for books rather than using a default MongoDB ObjectId.
 - To access these endpoints, include your access token in the Authorization header of your HTTP requests.
 
+## Deployment Process
+- Logged in to the Render account.
+- Chose the Git repository where the Node.js Book API code is hosted.
+- Under the "Environment" section, added the environment variables from .env file.
+- In the "Build" and "Start" section, specified i.e. "yarn" and "npm start" respectively.
+- Tested the APIs by sending requests to the provided URL through postman.
+
+Base URL of hosted Service is: `https://brew-app-assignment-node.onrender.com`
+
+
 Happy coding! 🚀📚🔥
