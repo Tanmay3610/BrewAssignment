@@ -16,19 +16,25 @@ This Node.js project provides APIs to manage a book list. You can perform the fo
 - **Description**: Get the list of all books.
 - **Usage**: Retrieve the list of books by sending a GET request to `/book/list`.
 
-### 2. Add a New Book
+### 2. Get a Book
+- **Endpoint**: `/book`
+- **Method**: GET
+- **Description**: Get a book from Book ID.
+- **Usage**: Retrieve a book info by sending a GET request to `/book` with the book's ID in the query param..
+
+### 3. Add a New Book
 - **Endpoint**: `/book`
 - **Method**: POST
 - **Description**: Add a new book to the list.
 - **Usage**: To add a new book, send a POST request to `/book` with the book details (bookId, title, author, summary) in the request body.
 
-### 3. Update a Book
+### 4. Update a Book
 - **Endpoint**: `/book`
 - **Method**: PUT
 - **Description**: Update an existing book by providing its ID.
 - **Usage**: Send a PUT request to `/book` with the book ID and the updated book details in the request body.
 
-### 4. Delete a Book
+### 5. Delete a Book
 - **Endpoint**: `/book?bookId=`
 - **Method**: DELETE
 - **Description**: Delete a book from the list using its ID.
@@ -66,5 +72,6 @@ During the development process, we made the following decisions and assumptions:
 
 - Deleted books are soft-deleted, preserving the records in case they may be useful in the future.
 - This API assumes that the user provides a custom identifier for books rather than using a default MongoDB ObjectId.
+- To access these endpoints, include your access token in the Authorization header of your HTTP requests.
 
 Happy coding! 🚀📚🔥
