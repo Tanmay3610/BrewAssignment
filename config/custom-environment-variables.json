@@ -1,0 +1,5 @@
+{
+  "serviceName": "SERVICE_NAME",
+  "mongodbUri": "MONGO_URL",
+  "internalAccessToken": "INTERNAL_ACCESS_TOKEN"
+}
