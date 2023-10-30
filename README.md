@@ -68,8 +68,9 @@ To set up and run this application locally, follow these steps:
 6. **Enjoy! 🎉**
 
 ## Decisions and Assumptions
-During the development process, we made the following decisions and assumptions:
+During the development process, following decisions and assumptions were made:
 
+- Summary is taken as optional field when adding the book
 - Deleted books are soft-deleted, preserving the records in case they may be useful in the future.
 - This API assumes that the user provides a custom identifier for books rather than using a default MongoDB ObjectId.
 - To access these endpoints, include your access token in the Authorization header of your HTTP requests.
